@@ -30,8 +30,9 @@ def bankclassify():
     input_data = json.dumps({"age": age, "job": job, "marital": marital, "education": education, "default": default, "balance": balance, "housing": housing, "loan": loan})
 
     #url for bank marketing model
-    url = "http://localhost:5000/api"
+    #url = "http://localhost:5000/api"
     #url = "https://bank-model-app.herokuapp.com/api"
+    url = "https://bank-model-app1.herokuapp.com/api"
   
     #post data to url
     results =  requests.post(url, input_data)
